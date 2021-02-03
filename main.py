@@ -11,7 +11,7 @@ devnet4 = "erd1l32u0h5nhcwrq2ts0rkhnanndwgt06jgd2z275zf8ey39lvxy6fsl6fmc2"
 urlBalance = "https://devnet-api.elrond.com/address/" + devnet1 + "/balance"
 urlNonce = "https://devnet-api.elrond.com/address/" + devnet1 + "/nonce"
 
-account = Account(key_file="erdjsonexample.json",
+account = Account(key_file="erdjsonexample.json",  # replace these place holders with your .json and password files
                   pass_file="password.txt")
 
 
