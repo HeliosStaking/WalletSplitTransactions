@@ -11,6 +11,9 @@ devnet4 = "erd1l32u0h5nhcwrq2ts0rkhnanndwgt06jgd2z275zf8ey39lvxy6fsl6fmc2"
 urlBalance = "https://devnet-api.elrond.com/address/" + devnet1 + "/balance"
 urlNonce = "https://devnet-api.elrond.com/address/" + devnet1 + "/nonce"
 
+account = Account(key_file="erdjsonexample.json",
+                  pass_file="password.txt")
+
 
 def main():
     tx1()
@@ -50,9 +53,6 @@ sendAmount3 = str(f"{num3:.0f}")
 
 
 def tx1():
-    account = Account(key_file="erd1hpu42hjnx6hm8fjv48cff2qmmqwjh7w3wzf00v2m538w5x2jcnpqhgsggr.json",
-                      pass_file="devnet.txt")
-
     tx1 = Transaction()
     tx1.nonce = getNonce()
     tx1.value = sendAmount1
@@ -71,8 +71,6 @@ def tx1():
 
 def tx2():
     time.sleep(60)
-    account = Account(key_file="erd1hpu42hjnx6hm8fjv48cff2qmmqwjh7w3wzf00v2m538w5x2jcnpqhgsggr.json",
-                      pass_file="devnet.txt")
 
     tx2 = Transaction()
     tx2.nonce = getNonce()
@@ -92,8 +90,6 @@ def tx2():
 
 def tx3():
     time.sleep(60)
-    account = Account(key_file="erd1hpu42hjnx6hm8fjv48cff2qmmqwjh7w3wzf00v2m538w5x2jcnpqhgsggr.json",
-                      pass_file="devnet.txt")
 
     tx3 = Transaction()
     tx3.nonce = getNonce()
