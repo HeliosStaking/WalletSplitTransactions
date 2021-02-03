@@ -26,19 +26,20 @@ def main():
 
 
 def getbalance():
-    response = requests.get(urlBalance)
     # access JSOn content
+    response = requests.get(urlBalance)
     data = response.json()
-    # convert balance to int
+    # parse json and convert result to int
     x = int((data["data"]["balance"]))
 
     return x
 
 
 def getNonce():
+    # access JSOn content
     response = requests.get(urlNonce)
     data = response.json()
-
+    # parse json and convert result to int
     x = int((data["data"]["nonce"]))
 
     return x
