@@ -1,3 +1,7 @@
+"""
+Author: Helios Staking 2021
+"""
+
 import requests
 import time
 from erdpy.accounts import Account
