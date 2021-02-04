@@ -23,10 +23,7 @@ def main():
     tx1()
     tx2()
     tx3()
-    # payload1 = tx1.to_dictionary()
-    # payload2 = tx2.to_dictionary()
-    # payload3 = tx3.to_dictionary()
-    # print(payload1, payload2, payload3)
+
 
 
 def getbalance():
@@ -49,7 +46,7 @@ def getNonce():
     return x
 
 
-num = getbalance() * .2 / 100
+num = getbalance() * .2 / 100  # This will set the send amount at .2% of the current balance. Can be adjusted as needed.
 sendAmount1 = str(f"{num:.0f}")
 num2 = getbalance() * 41.7 / 100
 sendAmount2 = str(f"{num2:.0f}")
